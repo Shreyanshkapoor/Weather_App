@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-image: url('bg_img.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* Smooth font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Fallback background color */
+  background-color: #87ceeb;
+}
+
+/* Weather card */
+.weather-card {
+  background: linear-gradient(to bottom right, #c4fcfc, #4789be);
+  width: 280px;
+  padding: 25px 20px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.search-bar input {
+  border: none;
+  padding: 10px 15px;
+  flex: 1;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  cursor: text;
+}
+
+.search-bar input:focus {
+  outline: 2px solid #4789be;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-bar button:hover {
+  color: #4789be;
+  background-color: #e0e7ff;
+  border-radius: 0 30px 30px 0;
+}
+
+.search-bar button:focus {
+  outline: 2px solid #4789be;
+}
+
+/* Weather icon */
+.weather-icon img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+/* Temperature */
+.temperature {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* City name */
+.city-name {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* Info section */
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.info .humidity, .info .wind {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info img {
+  width: 24px;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.info p {
+  margin: 0;
+  font-size: 12px;
+  color: #e2e8f0;
+}
+
+/* Responsive for small screens */
+@media (max-width: 320px) {
+  .weather-card {
+    width: 90vw;
+    padding: 20px 15px;
+  }
+  .temperature {
+    font-size: 32px;
+  }
+  .city-name {
+    font-size: 18px;
+  }
+  .info h3 {
+    font-size: 14px;
+  }
+  .info p {
+    font-size: 10px;
+  }
+}

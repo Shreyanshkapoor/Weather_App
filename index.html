@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather-App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="weather-card">
+    <h2 style="color: #ffffff;">Weather-App</h2>
+    <form id="searchForm" onsubmit="event.preventDefault(); getWeather();">
+      <div class="search-bar">
+        <input 
+          type="text" 
+          id="cityInput" 
+          placeholder="Enter city name" 
+          aria-label="City name" 
+          required
+        />
+        <button type="submit" aria-label="Get Weather">🔍</button>
+      </div>
+    </form>
+
+    <div class="weather-icon">
+      <img id="weatherIcon" src="cloudy.png" alt="Weather Icon" />
+    </div>
+
+    <div class="temperature" id="temperature">38°C</div>
+    <div class="city-name" id="cityName">Greater Noida</div>
+
+    <div class="info">
+      <div class="humidity">
+        <img src="humidity.png" alt="Humidity icon" />
+        <div>
+          <h3 id="humidity">64%</h3>
+          <p>Humidity</p>
+        </div>
+      </div>
+      <div class="wind">
+        <img src="wind.png" alt="Wind icon" />
+        <div>
+          <h3 id="windSpeed">18 km/h</h3>
+          <p>Wind Speed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
