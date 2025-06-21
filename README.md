@@ -36,7 +36,7 @@ Weather App/
    git clone https://github.com/Shreyanshkapoor/Weather_App.git
    cd weather-app
 
-##🧑‍💻 Author
+## 🧑‍💻 Author
 
 Shreyansh Kapoor
 
