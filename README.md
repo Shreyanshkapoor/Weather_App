@@ -17,18 +17,6 @@ A simple and visually appealing weather application that displays real-time weat
 - JavaScript (Vanilla)  
 - OpenWeatherMap API *(update if you used a different one)*
 
-## 📁 Project Structure
-
-Weather App/
-├── index.html
-├── style.css
-├── script.js
-├── bg_img.jpg
-├── cloudy.png
-├── humidity.png
-├── wind.png
-└── ... (other assets)
-
 ## ⚙️ How to Run Locally
 
 1. Clone the repository:
