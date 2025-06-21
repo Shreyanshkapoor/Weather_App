@@ -37,5 +37,7 @@ Weather App/
    cd weather-app
 
 ##🧑‍💻 Author
+
 Shreyansh Kapoor
+
 GitHub: https://github.com/Shreyanshkapoor
